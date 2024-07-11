@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baker's House</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://i.pinimg.com/564x/1f/c9/05/1fc9052129127bf9d138cc45d3d61d09.jpg');
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-attachment: fixed; /* Fixes the background image in place */
+            background-position: center; /* Centers the background image */
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baker's House</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+        }
+        .content h1 {
+            font-family: 'Brush Script', cursive ;
+        }
+        .content p {
+            font-family: 'Times New Roman, serif';
+        }
+    </style>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <div class="landing-content">
+            <div class="welcome-line">WELCOME</div>
+            <div class="to-line">TO</div>
+            <div class="bakers-house-line">BAKER'S HOUSE <br><p>Applicable in</p><p>(Offline & Online) </p></div>
+        </div>
+    </div>
+    <div>
+        <button class="start-button" onclick="start()">Start</button>
+    </div>
+
+    <!-- Main Page -->
+    <div id="main-page" class="page hidden">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="content">
+            <h1>Baker's House</h1>
+            <p>Welcome to Baker's House! Here you will find the best cakes in town.</p>
+        </div>
+        <div class="cake-images">
+            <div class="image-item" onclick="toggleInfo(this)">
+                <img src="https://i.pinimg.com/originals/3b/6d/91/3b6d91088d82fdf36c774e39ec97e779.jpg" alt="Cake 1"  class="square-image">
+                <div class="info">
+                    <div class="center">
+                    <p>Special Ingredients:</p>
+                    <ul>
+                        <li>flour</li>
+                        <li>sugar</li>
+                        <li>eggs</li>
+                        <li>vanilla</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="special-offer hidden">
+                <h2>Today Special Offer!</h2>
+                <p>Buy 2 get 1 free. Today only!</p>
+            </div>
+            <div class="image-item" onclick="toggleInfo(this)">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.zyHFf9AdQDjXXBhF8KGUeAHaE7&pid=Api&P=0&h=180" alt="Cake 2" class="square-image" >
+                <div class="info">
+                    <p>Special Ingredients:</p>
+                    <ul>
+                        <li>Butter</li>
+                        <li>Cocoa</li>
+                        <li>Milk</li>
+                        <li>Hazelnuts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="offers">
+            <button id="launching-button">Launching Date</button>
+            <div id="launching-date" class="hidden">
+                <h2>Launching Date</h2>
+                <p>The launch date is: <span id="date-placeholder"></span></p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>Contact Number: 123-456-7890</p>
+            <p>Email: bakershouse@example.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
